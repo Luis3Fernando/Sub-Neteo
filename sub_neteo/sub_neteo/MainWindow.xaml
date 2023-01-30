@@ -5,8 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sub_neteo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1000">
+        Title="MainWindow" Height="700" Width="1000"
+        Background="{DynamicResource PrimaryBackgroundColor}">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="900"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
+        <Border Background="{DynamicResource PrimaryColor2}" Grid.Column="1" CornerRadius="20" Margin="0,20,20,20" Width="880">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Border Background="{DynamicResource SecundaryBackgroundColor}" CornerRadius="20,0,0,20" Grid.Column="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock HorizontalAlignment="Right" Margin="0,30,5,0" FontSize="50" Foreground="{DynamicResource PrimaryBackgroundColor}"
+                                   FontFamily="Noto Sans SemiBold" Grid.Row="0">SUB</TextBlock>
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="1" FontSize="15" FontFamily="Noto Sans Medium"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">Programador</TextBlock>
+                        </Grid>
+
+                        <Grid Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="1" FontSize="15" FontFamily="Noto Sans Medium"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center">Principal</TextBlock>
+                        </Grid>
+                    </Grid>
+                </Border>
+                
+            </Grid>
+        </Border>
     </Grid>
 </Window>
