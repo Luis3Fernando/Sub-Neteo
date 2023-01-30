@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "sub_neteo/1.0.0": {
+        "runtime": {
+          "sub_neteo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sub_neteo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
