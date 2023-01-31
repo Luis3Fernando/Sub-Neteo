@@ -16,11 +16,31 @@
 
         <Ellipse Width="300" Height="300" Grid.Row="0">
             <Ellipse.Fill>
-                <ImageBrush ImageSource="perfil1.jpg"></ImageBrush>
+                <ImageBrush ImageSource="C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\Pages\perfil1.jpg"></ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
 
         <TextBlock Grid.Row="1" HorizontalAlignment="Center" Margin="10" FontSize="50" Foreground="{DynamicResource PrimaryBackgroundColor}"
                                  VerticalAlignment="Center"  FontFamily="Noto Sans SemiBold">Luis Fernando <LineBreak></LineBreak> Chumbes Ramos</TextBlock>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="13" FontFamily="Noto Sans" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource PrimaryColor1}">
+                <Span xml:space="preserve"><Run></Run><Hyperlink NavigateUri="https://www.facebook.com/louisf.chumbesramos3">Facebook</Hyperlink><Run></Run></Span>
+            </TextBlock>
+
+            <TextBlock FontSize="13" FontFamily="Noto Sans" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource PrimaryColor1}">
+                <Span xml:space="preserve"><Run></Run><Hyperlink NavigateUri="https://www.facebook.com/louisf.chumbesramos3">Twiter</Hyperlink><Run></Run></Span>
+            </TextBlock>
+
+            <TextBlock FontSize="13" FontFamily="Noto Sans" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource PrimaryColor1}">
+                <Span xml:space="preserve"><Run></Run><Hyperlink NavigateUri="https://www.facebook.com/louisf.chumbesramos3">Instagram</Hyperlink><Run></Run></Span>
+            </TextBlock>
+        </Grid>
     </Grid>
 </Page>

@@ -63,5 +63,10 @@ namespace sub_neteo
             }
             
         }
+
+        private void btnMain(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
     }
 }

@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sub_neteo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1000"
+        Title="MainWindow" Height="700" Width="1000" WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" WindowState="Normal"
         Background="{DynamicResource PrimaryBackgroundColor}">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -13,6 +15,9 @@
             <ColumnDefinition Width="900"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
+        <RadioButton x:Name="bt_icono" Grid.Column="0" Style="{DynamicResource MenuRadioButtonLogo}" Tag="{DynamicResource logo}"
+                       VerticalAlignment="Top" Margin="0,50,0,0" Click="btnMain"></RadioButton>
+        
         <Border Background="{DynamicResource PrimaryColor2}" Grid.Column="1" CornerRadius="20" Margin="0,20,20,20" Width="880">
             <Grid>
                 <Grid.ColumnDefinitions>
