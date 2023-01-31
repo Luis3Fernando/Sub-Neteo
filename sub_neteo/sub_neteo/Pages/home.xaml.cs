@@ -345,12 +345,12 @@ namespace sub_neteo.Pages
 
             if (!String.IsNullOrEmpty(tb_direccionIP.Text) && !String.IsNullOrEmpty(tb_numeroRedes.Text))
             {
-                //Calculos();
+                Calculos();
             }
 
         }
 
-        /*private void Calculos()
+        private void Calculos()
         {
             int _bits = bits(Convert.ToInt32(tb_numeroRedes.Text));
             double salto = 256 / (Math.Pow(2, _bits));
@@ -358,47 +358,41 @@ namespace sub_neteo.Pages
 
             if (_bits == 2)
             {
-                tb_subredesUtil.Text = "2";
-                tb_subredesMascara.Text = "/26";
-                tb_IPporSubred.Text = "64";
+                tb_SubRedUtil.Text = "2";
+                tb_SubRedMascara.Text = "/26";
                 tb_IPutil.Text = "62";
             }
             else if (_bits == 3)
             {
-                tb_subredesUtil.Text = "6";
-                tb_subredesMascara.Text = "/27";
-                tb_IPporSubred.Text = "32";
+                tb_SubRedUtil.Text = "6";
+                tb_SubRedMascara.Text = "/27";
                 tb_IPutil.Text = "30";
             }
             else if (_bits == 4)
             {
-                tb_subredesUtil.Text = "14";
-                tb_subredesMascara.Text = "/28";
-                tb_IPporSubred.Text = "16";
+                tb_SubRedUtil.Text = "14";
+                tb_SubRedMascara.Text = "/28";
                 tb_IPutil.Text = "14";
             }
             else if (_bits == 5)
             {
-                tb_subredesUtil.Text = "30";
-                tb_subredesMascara.Text = "/29";
-                tb_IPporSubred.Text = "8";
+                tb_SubRedUtil.Text = "30";
+                tb_SubRedMascara.Text = "/29";
                 tb_IPutil.Text = "6";
             }
             else if (_bits == 6)
             {
-                tb_subredesUtil.Text = "62";
-                tb_subredesMascara.Text = "/30";
-                tb_IPporSubred.Text = "4";
+                tb_SubRedUtil.Text = "62";
+                tb_SubRedMascara.Text = "/30";
                 tb_IPutil.Text = "2";
             }
             else if (_bits == 7)
             {
-                tb_subredesUtil.Text = "128";
-                tb_subredesMascara.Text = "/31";
-                tb_IPporSubred.Text = "2";
+                tb_SubRedUtil.Text = "128";
+                tb_SubRedMascara.Text = "/31";
                 tb_IPutil.Text = "0";
             }
 
-        }*/
+        }
     }
 }
