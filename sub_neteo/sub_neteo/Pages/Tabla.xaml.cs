@@ -121,7 +121,7 @@ namespace sub_neteo.Pages
             int rango_util = sal1 - 2;
 
             for(int i=0; i < n; i++){
-                lista_elementos.Add(new rangoIP() { subred = primera_parte+salto, ip_configurables = primera_parte+(salto+1)+"-"+primera_parte+(salto+rango_util), broadcast = primera_parte+ (salto + rango_util+1) });
+                lista_elementos.Add(new rangoIP() { subred = primera_parte+salto, ip_configurables = primera_parte+(salto+1)+" - "+primera_parte+(salto+rango_util), broadcast = primera_parte+ (salto + rango_util+1) });
                 salto = salto+ sal1;
             }
 

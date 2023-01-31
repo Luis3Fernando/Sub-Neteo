@@ -25,7 +25,7 @@
             <TextBlock Grid.Column="0" HorizontalAlignment="Left" Margin="5,30,0,0" FontSize="50" Foreground="{DynamicResource PrimaryColor1}"
                                    FontFamily="Noto Sans SemiBold">NETEO</TextBlock>
 
-            <TextBox x:Name="tb_direccionIP" Grid.Column="1" FontFamily="Noto Sans" FontSize="16" Background="{DynamicResource SecundaryBackgroundColor}" Margin="20,35,20,35"
+            <TextBox x:Name="tb_direccionIP" Grid.Column="1" FontFamily="Noto Sans" FontSize="16" Background="{DynamicResource SecundaryBackgroundColor}" Margin="20,50,20,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" TextChanged="RegistroIP">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -34,7 +34,7 @@
                 </TextBox.Resources>
             </TextBox>
 
-            <TextBox x:Name="tb_numeroRedes" Grid.Column="2" FontFamily="Noto Sans" FontSize="16" Background="{DynamicResource SecundaryBackgroundColor}" Margin="20,35,20,35"
+            <TextBox x:Name="tb_numeroRedes" Grid.Column="2" FontFamily="Noto Sans" FontSize="16" Background="{DynamicResource SecundaryBackgroundColor}" Margin="20,50,20,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" TextChanged="NumeroRedes">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -46,23 +46,21 @@
         
         <!--TABLA-->
 
-        <ListBox x:Name="tabla" Grid.Row="1" Margin="30,30, 30, 30" HorizontalContentAlignment="Stretch">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition  Width="*"></ColumnDefinition>
-                            <ColumnDefinition  Width="*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+        <ListView x:Name="tabla" FontSize="13" Grid.Row="1" Margin="40" HorizontalContentAlignment="Stretch" BorderBrush="{DynamicResource PrimaryBackgroundColor}">
+            <ListView.Resources>
+                <Style TargetType="{x:Type GridViewColumnHeader}">
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                </Style>
+            </ListView.Resources>
 
-                        <TextBlock Grid.Column="0" Text="{Binding subred}"></TextBlock>
-                        <TextBlock Grid.Column="1" Text="{Binding ip_configurables}"></TextBlock>
-                        <TextBlock Grid.Column="2" Text="{Binding broadcast}"></TextBlock>
-                    </Grid>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Sub Redes" Width="150" DisplayMemberBinding="{Binding subred}" />
+                    <GridViewColumn Header="Ips Configurables" Width="290" DisplayMemberBinding="{Binding ip_configurables}" />
+                    <GridViewColumn Header="Broadcast" Width="150" DisplayMemberBinding="{Binding broadcast}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
         
     </Grid>
 </Page>

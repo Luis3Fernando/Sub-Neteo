@@ -85,7 +85,7 @@ namespace sub_neteo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/sub_neteo;V1.0.0.0;component/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/sub_neteo;component/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

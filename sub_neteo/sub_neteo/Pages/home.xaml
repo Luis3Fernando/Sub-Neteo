@@ -56,7 +56,7 @@
 
             <TextBlock FontFamily="Noto Sans" FontSize="14" Foreground="{DynamicResource PrimaryBackgroundColor}" Grid.Column="0"
                        HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top">IP de Red</TextBlock>
-            <TextBox x:Name="tb_IPred" Grid.Column="0" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="70,50,70,50"
+            <TextBox x:Name="tb_IPred" Grid.Column="0" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="90,50,90,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" IsReadOnly="True">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -67,7 +67,7 @@
 
             <TextBlock FontFamily="Noto Sans" FontSize="14" Foreground="{DynamicResource PrimaryBackgroundColor}" Grid.Column="1"
                        HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top">Máscara de Red</TextBlock>
-            <TextBox x:Name="tb_MascaraRed" Grid.Column="1" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="70,50,70,50"
+            <TextBox x:Name="tb_MascaraRed" Grid.Column="1" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="90,50,90,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" IsReadOnly="True">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -86,7 +86,7 @@
 
             <TextBlock FontFamily="Noto Sans" FontSize="14" Foreground="{DynamicResource PrimaryBackgroundColor}" Grid.Column="0"
                        HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top">Bits</TextBlock>
-            <TextBox x:Name="tb_bits" Grid.Column="0" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="70,50,70,50"
+            <TextBox x:Name="tb_bits" Grid.Column="0" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="90,50,90,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" IsReadOnly="True">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -97,7 +97,7 @@
 
             <TextBlock FontFamily="Noto Sans" FontSize="14" Foreground="{DynamicResource PrimaryBackgroundColor}" Grid.Column="1"
                        HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top">Clase</TextBlock>
-            <TextBox x:Name="tb_clase" Grid.Column="1" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="70,50,70,50"
+            <TextBox x:Name="tb_clase" Grid.Column="1" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="90,50,90,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" IsReadOnly="True">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -116,7 +116,7 @@
 
             <TextBlock FontFamily="Noto Sans" FontSize="14" Foreground="{DynamicResource PrimaryBackgroundColor}" Grid.Column="0"
                        HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top">Subredes Utilizables</TextBlock>
-            <TextBox x:Name="tb_SubRedUtil" Grid.Column="0" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="70,50,70,50"
+            <TextBox x:Name="tb_SubRedUtil" Grid.Column="0" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="90,50,90,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" IsReadOnly="True">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -127,7 +127,7 @@
 
             <TextBlock FontFamily="Noto Sans" FontSize="14" Foreground="{DynamicResource PrimaryBackgroundColor}" Grid.Column="1"
                        HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top">Máscara de Sub Red</TextBlock>
-            <TextBox x:Name="tb_SubRedMascara" Grid.Column="1" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="70,50,70,50"
+            <TextBox x:Name="tb_SubRedMascara" Grid.Column="1" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="90,50,90,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" IsReadOnly="True">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -146,7 +146,7 @@
 
             <TextBlock FontFamily="Noto Sans" FontSize="14" Foreground="{DynamicResource PrimaryBackgroundColor}" Grid.Column="0"
                        HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top">IPs Utilizables</TextBlock>
-            <TextBox x:Name="tb_IPutil" Grid.Column="0" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="70,50,70,50"
+            <TextBox x:Name="tb_IPutil" Grid.Column="0" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="90,50,90,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" IsReadOnly="True">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -157,7 +157,7 @@
 
             <TextBlock FontFamily="Noto Sans" FontSize="14" Foreground="{DynamicResource PrimaryBackgroundColor}" Grid.Column="1"
                        HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top">Salto</TextBlock>
-            <TextBox x:Name="tb_salto" Grid.Column="1" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="70,50,70,50"
+            <TextBox x:Name="tb_salto" Grid.Column="1" FontFamily="Noto Sans" FontSize="15" Background="{DynamicResource SecundaryBackgroundColor}" Margin="90,50,90,50"
                      VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" IsReadOnly="True">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
