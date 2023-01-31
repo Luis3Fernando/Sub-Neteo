@@ -39,6 +39,8 @@
                                      Cursor="Hand" IsChecked="True"></RadioButton>
                     </Grid>
                 </Border>
+
+                <Frame Grid.Column="1" Source="/Pages/home.xaml"></Frame>
                 
             </Grid>
         </Border>
