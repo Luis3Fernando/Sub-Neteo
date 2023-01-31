@@ -32,11 +32,11 @@
                         <TextBlock HorizontalAlignment="Right" Margin="0,30,5,0" FontSize="50" Foreground="{DynamicResource PrimaryBackgroundColor}"
                                    FontFamily="Noto Sans SemiBold" Grid.Row="0">SUB</TextBlock>
 
-                        <RadioButton Grid.Row="1" Content="Programador" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource perfil_complete}"
+                        <RadioButton x:Name="bt_Perfil" Grid.Row="1" Content="Programador" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource perfil_complete}"
                                      Cursor="Hand"></RadioButton>
 
-                        <RadioButton Grid.Row="2" Content="Home" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource home}"
-                                     Cursor="Hand"></RadioButton>
+                        <RadioButton x:Name="bt_Home" Grid.Row="2" Content="Home" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource home}"
+                                     Cursor="Hand" IsChecked="True"></RadioButton>
                     </Grid>
                 </Border>
                 

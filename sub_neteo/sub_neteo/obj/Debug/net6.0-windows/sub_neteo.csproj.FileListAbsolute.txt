@@ -21,3 +21,5 @@ C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\
 C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\ref\sub_neteo.dll
 C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\Themes\LightTheme.baml
 C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\App.baml
+C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\Assets\Icons\Icons.baml
+C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\Styles\MainStyle.baml

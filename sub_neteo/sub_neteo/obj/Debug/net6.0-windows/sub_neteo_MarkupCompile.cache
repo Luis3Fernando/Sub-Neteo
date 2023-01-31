@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\App.xaml
-21504134879
+4466338562
 
 3-1233169557
 194237474483
-MainWindow.xaml;Themes\LightTheme.xaml;
+Assets\Icons\Icons.xaml;MainWindow.xaml;Styles\MainStyle.xaml;Themes\LightTheme.xaml;
 
 False
 
