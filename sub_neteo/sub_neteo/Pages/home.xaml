@@ -28,8 +28,8 @@
             <TextBlock Grid.Column="0" HorizontalAlignment="Left" Margin="5,30,0,0" FontSize="50" Foreground="{DynamicResource PrimaryColor1}"
                                    FontFamily="Noto Sans SemiBold">NETEO</TextBlock>
 
-            <TextBox Grid.Column="1" FontFamily="Noto Sans" FontSize="16" Background="{DynamicResource SecundaryBackgroundColor}" Margin="20,35,20,35"
-                     VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15">
+            <TextBox x:Name="tb_direccionIP" Grid.Column="1" FontFamily="Noto Sans" FontSize="16" Background="{DynamicResource SecundaryBackgroundColor}" Margin="20,35,20,35"
+                     VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MaxLength="15" TextChanged="RegistroIP">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="20"/>
@@ -37,8 +37,8 @@
                 </TextBox.Resources>
             </TextBox>
 
-            <TextBox Grid.Column="2" FontFamily="Noto Sans" FontSize="16" Background="{DynamicResource SecundaryBackgroundColor}" Margin="20,35,20,35"
-                     VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox x:Name="tb_numeroRedes" Grid.Column="2" FontFamily="Noto Sans" FontSize="16" Background="{DynamicResource SecundaryBackgroundColor}" Margin="20,35,20,35"
+                     VerticalContentAlignment="Center" HorizontalContentAlignment="Center" TextChanged="NumeroRedes">
                 <TextBox.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="20"/>
