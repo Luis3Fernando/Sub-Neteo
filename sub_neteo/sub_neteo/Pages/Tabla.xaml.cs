@@ -21,9 +21,11 @@ namespace sub_neteo.Pages
     /// </summary>
     public partial class Tabla : Page
     {
-        public Tabla()
+        public Tabla(string direccionIP = "0", string numero_redes = "0")
         {
             InitializeComponent();
+            tb_direccionIP.Text = direccionIP;
+            tb_numeroRedes.Text = numero_redes;
         }
 
         private string extraer(List<char> palabras)

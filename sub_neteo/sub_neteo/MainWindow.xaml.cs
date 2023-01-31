@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using sub_neteo.Pages;
 
 namespace sub_neteo
 {
@@ -37,7 +26,25 @@ namespace sub_neteo
 
         private void click_tabla(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new System.Uri("Pages/Tabla.xaml", UriKind.RelativeOrAbsolute));
+            if (String.IsNullOrEmpty(DataInter.direccion_ip) || !String.IsNullOrEmpty(DataInter.numero_redes))
+            {
+                PagesNavigation.Navigate(new Tabla("0", DataInter.numero_redes));
+            }
+
+            else if (!String.IsNullOrEmpty(DataInter.direccion_ip) || String.IsNullOrEmpty(DataInter.numero_redes))
+            {
+                PagesNavigation.Navigate(new Tabla(DataInter.direccion_ip, "0"));
+            }
+
+            else if (!String.IsNullOrEmpty(DataInter.direccion_ip) || !String.IsNullOrEmpty(DataInter.numero_redes))
+            {
+                PagesNavigation.Navigate(new Tabla(DataInter.direccion_ip, DataInter.numero_redes));
+            }
+            else
+            {
+                PagesNavigation.Navigate(new Tabla());
+            }
+            
         }
     }
 }

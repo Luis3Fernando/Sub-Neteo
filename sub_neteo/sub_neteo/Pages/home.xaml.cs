@@ -36,6 +36,8 @@ namespace sub_neteo.Pages
             tb_IPred.Text = IPred(numeros);
             tb_MascaraRed.Text = MascaraRed(numeros);
 
+            DataInter.direccion_ip = direccionIP;
+
             if (!String.IsNullOrEmpty(tb_direccionIP.Text) && !String.IsNullOrEmpty(tb_numeroRedes.Text))
             {
                 Calculos();
@@ -342,6 +344,7 @@ namespace sub_neteo.Pages
             string valor = tb_numeroRedes.Text;
             int bit_quitar = bits(Convert.ToInt32(valor));
             tb_bits.Text = "" + bit_quitar;
+            DataInter.numero_redes = valor;
 
             if (!String.IsNullOrEmpty(tb_direccionIP.Text) && !String.IsNullOrEmpty(tb_numeroRedes.Text))
             {
