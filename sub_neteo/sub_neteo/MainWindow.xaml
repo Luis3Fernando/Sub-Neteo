@@ -40,6 +40,8 @@
 
                             <TextBlock Grid.Column="1" FontSize="15" FontFamily="Noto Sans Medium"
                                        VerticalAlignment="Center" HorizontalAlignment="Center">Programador</TextBlock>
+
+                            <RadioButton Grid.Column="0"></RadioButton>
                         </Grid>
 
                         <Grid Grid.Row="2">

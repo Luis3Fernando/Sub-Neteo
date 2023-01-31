@@ -10,5 +10,6 @@
 
     <!-- Typograhy Colors -->
     <SolidColorBrush x:Key="TextSecundaryColor" Color="#434344"/>
-    
+    <SolidColorBrush x:Key="GrayColor" Color="#EEEEEE"/>
+
 </ResourceDictionary>
