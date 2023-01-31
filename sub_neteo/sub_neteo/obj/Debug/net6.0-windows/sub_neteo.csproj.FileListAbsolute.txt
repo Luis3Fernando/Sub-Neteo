@@ -27,3 +27,5 @@ C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\
 C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\Pages\home.baml
 C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\Pages\programador.g.cs
 C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\Pages\programador.baml
+C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\Pages\Tabla.g.cs
+C:\Users\Luis Fernando\Documents\Unamba\Ciclo 5\Redes de Computadoras\Sub_Neteo\sub_neteo\sub_neteo\obj\Debug\net6.0-windows\Pages\Tabla.baml

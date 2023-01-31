@@ -13,6 +13,9 @@
     <Compile Update="Pages\programador.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\Tabla.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Assets\Icons\Icons.xaml">
@@ -25,6 +28,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\programador.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Tabla.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\MainStyle.xaml">

@@ -26,6 +26,7 @@
                             <RowDefinition Height="200"></RowDefinition>
                             <RowDefinition Height="100"></RowDefinition>
                             <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
                             <RowDefinition Height="*"></RowDefinition>
                         </Grid.RowDefinitions>
 
@@ -33,14 +34,16 @@
                                    FontFamily="Noto Sans SemiBold" Grid.Row="0">SUB</TextBlock>
 
                         <RadioButton x:Name="bt_Perfil" Grid.Row="1" Content="Programador" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource perfil_complete}"
-                                     Cursor="Hand"></RadioButton>
+                                     Cursor="Hand" Click="click_programador"></RadioButton>
 
                         <RadioButton x:Name="bt_Home" Grid.Row="2" Content="Home" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource home}"
-                                     Cursor="Hand" IsChecked="True"></RadioButton>
+                                      Cursor="Hand" IsChecked="True" Click="click_home"></RadioButton>
+                        <RadioButton x:Name="bt_tabla" Grid.Row="3" Content="Tabla" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource notes}"
+                                      Cursor="Hand" Click="click_tabla"></RadioButton>
                     </Grid>
                 </Border>
 
-                <Frame Grid.Column="1" Source="/Pages/home.xaml"></Frame>
+                <Frame x:Name="PagesNavigation" Grid.Column="1" NavigationUIVisibility="Hidden"></Frame>
                 
             </Grid>
         </Border>

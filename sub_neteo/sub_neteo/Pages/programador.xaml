@@ -5,11 +5,23 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:sub_neteo.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="660" d:DesignWidth="680"
       Title="programador">
 
     <Grid>
-        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Margin="10" FontSize="50" Foreground="{DynamicResource PrimaryBackgroundColor}"
-                                 VerticalAlignment="Center"  FontFamily="Noto Sans SemiBold">Luis Fernando Chumbes Ramos</TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="350"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" Margin="10" FontSize="50" Foreground="{DynamicResource PrimaryBackgroundColor}"
+                                 VerticalAlignment="Center"  FontFamily="Noto Sans SemiBold">Luis Fernando <LineBreak></LineBreak> Chumbes Ramos</TextBlock>
+
+        <!--
+        <Ellipse Width="300" Height="300" Grid.Row="0">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/Assets/Images/perfil.jpg" Stretch="Fill"></ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>-->
     </Grid>
 </Page>

@@ -24,5 +24,20 @@ namespace sub_neteo
         {
             InitializeComponent();
         }
+
+        private void click_programador(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("Pages/programador.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void click_home(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("Pages/home.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void click_tabla(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("Pages/Tabla.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }
