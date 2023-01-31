@@ -357,46 +357,64 @@ namespace sub_neteo.Pages
 
         private void Calculos()
         {
+            string direccionIP = tb_direccionIP.Text;
+            List<char> numeros = new List<char>();
+            numeros.AddRange(direccionIP);
+
             int _bits = bits(Convert.ToInt32(tb_numeroRedes.Text));
+            int mascara, bits_restantes;
+            string subreutil, ipUtil;
+
+            if (_bits == 0)
+            {
+                tb_bits.Text = "Error";
+                subreutil= "Error";
+            }
+
+            else
+            {
+                subreutil = ""+(Math.Pow(2, _bits) - 2);
+            }
+
             double salto = 256 / (Math.Pow(2, _bits));
             tb_salto.Text = "" + salto;
 
-            if (_bits == 2)
+            if (ClasePertenece(numeros) == "A")
             {
-                tb_SubRedUtil.Text = "2";
-                tb_SubRedMascara.Text = "/26";
-                tb_IPutil.Text = "62";
+                mascara= 8 + _bits;
+                bits_restantes= (24 - _bits);
+                ipUtil = ""+(Math.Pow(2, bits_restantes) - 2);
+                tb_IPutil.Text = ipUtil;
+                tb_SubRedMascara.Text = "/" + mascara;
+                tb_SubRedUtil.Text = "" + subreutil;
             }
-            else if (_bits == 3)
+
+            else if (ClasePertenece(numeros) == "B")
             {
-                tb_SubRedUtil.Text = "6";
-                tb_SubRedMascara.Text = "/27";
-                tb_IPutil.Text = "30";
+                mascara = 16 + _bits;
+                bits_restantes = (16 - _bits);
+                ipUtil = "" + (Math.Pow(2, bits_restantes) - 2);
+                tb_IPutil.Text = ipUtil;
+                tb_SubRedMascara.Text = "/" + mascara;
+                tb_SubRedUtil.Text = ""+subreutil;
             }
-            else if (_bits == 4)
+
+            else if (ClasePertenece(numeros) == "C")
             {
-                tb_SubRedUtil.Text = "14";
-                tb_SubRedMascara.Text = "/28";
-                tb_IPutil.Text = "14";
+                mascara = 24 + _bits;
+                bits_restantes = (8 - _bits);
+                ipUtil = "" + (Math.Pow(2, bits_restantes) - 2);
+                tb_IPutil.Text = ipUtil;
+                tb_SubRedMascara.Text = "/" + mascara;
+                tb_SubRedUtil.Text = "" + subreutil;
             }
-            else if (_bits == 5)
+            else
             {
-                tb_SubRedUtil.Text = "30";
-                tb_SubRedMascara.Text = "/29";
-                tb_IPutil.Text = "6";
+                tb_SubRedUtil.Text = "Error";
+                tb_SubRedMascara.Text = "Error";
+                tb_IPutil.Text = "Error";
             }
-            else if (_bits == 6)
-            {
-                tb_SubRedUtil.Text = "62";
-                tb_SubRedMascara.Text = "/30";
-                tb_IPutil.Text = "2";
-            }
-            else if (_bits == 7)
-            {
-                tb_SubRedUtil.Text = "128";
-                tb_SubRedMascara.Text = "/31";
-                tb_IPutil.Text = "0";
-            }
+
 
         }
     }
