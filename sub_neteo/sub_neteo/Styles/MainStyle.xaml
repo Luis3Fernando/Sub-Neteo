@@ -24,8 +24,8 @@
                             <Rectangle Name="Indicator" HorizontalAlignment="Left" Width="4" Height="50" VerticalAlignment="Center" RadiusX="2" RadiusY="2"/>
 
                             <!-- Icon -->
-                            <Path x:Name="Icon" Data="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type RadioButton}}}" Height="60" Width="60" Stretch="None"
-                                  Fill="{DynamicResource TextSecundaryColor}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 5 0"/>
+                            <Path x:Name="Icon" Data="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type RadioButton}}}" Height="20" Width="50" Stretch="None"
+                                  Fill="{DynamicResource TextSecundaryColor}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 0 0"/>
 
                             <!-- Text -->
                             <TextBlock x:Name="txtName" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="12 0 0 0"
