@@ -183,7 +183,7 @@ namespace sub_neteo.Pages
                 primera_parte = extraerA(numeros);
                 for (int i = 0; i < n; i++)
                 {
-                    lista_elementos.Add(new rangoIP() { subred = primera_parte + recorrido, ip_configurables = primera_parte + (recorrido + 1) + " - " + primera_parte + (recorrido), broadcast = primera_parte + (recorrido + 1) });
+                    lista_elementos.Add(new rangoIP() { subred = primera_parte + recorrido +".0.0", ip_configurables = primera_parte + (recorrido)+ ".0.1" + " - " + primera_parte + (recorrido + (salto1 - 1)) +".255.254", broadcast = primera_parte + (recorrido + (salto1 - 1)) +".255.255"});
                     recorrido = recorrido + sal1;
                 }
             }
@@ -193,7 +193,7 @@ namespace sub_neteo.Pages
                 primera_parte = extraerB(numeros);
                 for (int i = 0; i < n; i++)
                 {
-                    lista_elementos.Add(new rangoIP() { subred = primera_parte + recorrido+".0", ip_configurables = primera_parte + (recorrido)+".1" + " - " + primera_parte +(recorrido+(salto1-1)) +".254", broadcast = primera_parte + ".255"});
+                    lista_elementos.Add(new rangoIP() { subred = primera_parte + recorrido+".0", ip_configurables = primera_parte + (recorrido)+".1" + " - " + primera_parte +(recorrido+(salto1-1)) +".254", broadcast = primera_parte + (recorrido + (salto1 - 1)) + ".255" });
                     recorrido = recorrido + sal1;
                 }
             }

@@ -21,7 +21,7 @@
     <Page Update="Assets\Icons\Icons.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Main\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\home.xaml">
