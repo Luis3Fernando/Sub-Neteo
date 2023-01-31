@@ -97,10 +97,13 @@ namespace sub_neteo.Pages
 
         private void NumeroRedes(object sender, TextChangedEventArgs e)
         {
+            string direccionIP = tb_direccionIP.Text;
+            List<char> numeros = new List<char>();
+            numeros.AddRange(direccionIP);
             string valor = tb_numeroRedes.Text;
             int bit_quitar = bits(Convert.ToInt32(valor));
 
-            if (!String.IsNullOrEmpty(tb_direccionIP.Text) && !String.IsNullOrEmpty(tb_numeroRedes.Text))
+            if (!String.IsNullOrEmpty(tb_direccionIP.Text) && !String.IsNullOrEmpty(tb_numeroRedes.Text) && ip_correct(numeros))
             {
                 Generar();
             }

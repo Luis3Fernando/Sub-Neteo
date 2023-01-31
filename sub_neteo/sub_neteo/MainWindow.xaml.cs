@@ -21,22 +21,39 @@ namespace sub_neteo
 
         private void click_home(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new System.Uri("Pages/home.xaml", UriKind.RelativeOrAbsolute));
+            if (String.IsNullOrEmpty(DataInter.direccion_ip) && !String.IsNullOrEmpty(DataInter.numero_redes))
+            {
+                PagesNavigation.Navigate(new home("0", DataInter.numero_redes));
+            }
+
+            else if (!String.IsNullOrEmpty(DataInter.direccion_ip) && String.IsNullOrEmpty(DataInter.numero_redes))
+            {
+                PagesNavigation.Navigate(new home(DataInter.direccion_ip, "0"));
+            }
+
+            else if (!String.IsNullOrEmpty(DataInter.direccion_ip) && !String.IsNullOrEmpty(DataInter.numero_redes))
+            {
+                PagesNavigation.Navigate(new home(DataInter.direccion_ip, DataInter.numero_redes));
+            }
+            else
+            {
+                PagesNavigation.Navigate(new home());
+            }
         }
 
         private void click_tabla(object sender, RoutedEventArgs e)
         {
-            if (String.IsNullOrEmpty(DataInter.direccion_ip) || !String.IsNullOrEmpty(DataInter.numero_redes))
+            if (String.IsNullOrEmpty(DataInter.direccion_ip) && !String.IsNullOrEmpty(DataInter.numero_redes))
             {
                 PagesNavigation.Navigate(new Tabla("0", DataInter.numero_redes));
             }
 
-            else if (!String.IsNullOrEmpty(DataInter.direccion_ip) || String.IsNullOrEmpty(DataInter.numero_redes))
+            else if (!String.IsNullOrEmpty(DataInter.direccion_ip) && String.IsNullOrEmpty(DataInter.numero_redes))
             {
                 PagesNavigation.Navigate(new Tabla(DataInter.direccion_ip, "0"));
             }
 
-            else if (!String.IsNullOrEmpty(DataInter.direccion_ip) || !String.IsNullOrEmpty(DataInter.numero_redes))
+            else if (!String.IsNullOrEmpty(DataInter.direccion_ip) && !String.IsNullOrEmpty(DataInter.numero_redes))
             {
                 PagesNavigation.Navigate(new Tabla(DataInter.direccion_ip, DataInter.numero_redes));
             }

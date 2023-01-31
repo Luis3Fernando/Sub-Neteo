@@ -20,9 +20,11 @@ namespace sub_neteo.Pages
     /// </summary>
     public partial class home : Page
     {
-        public home()
+        public home(string direccionIP = "0", string numero_redes = "0")
         {
             InitializeComponent();
+            tb_direccionIP.Text = direccionIP;
+            tb_numeroRedes.Text = numero_redes;
         }
 
         private void RegistroIP(object sender, TextChangedEventArgs e)
