@@ -20,10 +20,10 @@ namespace sub_neteo.Pages
     /// </summary>
     public partial class home : Page
     {
-        public home(string direccionIP = "0", string numero_redes = "0")
+        public home(string direccion = "0", string numero_redes = "0")
         {
             InitializeComponent();
-            tb_direccionIP.Text = direccionIP;
+            tb_direccionIP.Text = direccion;
             tb_numeroRedes.Text = numero_redes;
         }
 
