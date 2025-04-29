@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luis Fernando\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\sub_neteo.csproj": {}
+    "C:\\Users\\luisf\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\sub_neteo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luis Fernando\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\sub_neteo.csproj": {
+    "C:\\Users\\luisf\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\sub_neteo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luis Fernando\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\sub_neteo.csproj",
+        "projectUniqueName": "C:\\Users\\luisf\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\sub_neteo.csproj",
         "projectName": "sub_neteo",
-        "projectPath": "C:\\Users\\Luis Fernando\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\sub_neteo.csproj",
-        "packagesPath": "C:\\Users\\Luis Fernando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luis Fernando\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\obj\\",
+        "projectPath": "C:\\Users\\luisf\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\sub_neteo.csproj",
+        "packagesPath": "C:\\Users\\luisf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luisf\\Documents\\Unamba\\Ciclo 5\\Redes de Computadoras\\Sub_Neteo\\sub_neteo\\sub_neteo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Luis Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luisf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -50,6 +60,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -58,7 +86,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

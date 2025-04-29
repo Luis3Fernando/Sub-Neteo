@@ -256,12 +256,12 @@ namespace sub_neteo.Pages
                 numero = Convert.ToInt32(valor);
             }
 
-            if (numero >= 1 && numero <= 27)
+            if (numero >= 1 && numero <= 127)
             {
                 return "A";
             }
 
-            else if (numero >= 28 && numero <= 191)
+            else if (numero >= 128 && numero <= 191)
             {
                 return "B";
             }
