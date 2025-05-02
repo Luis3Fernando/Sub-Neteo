@@ -1,7 +1,7 @@
 # Sub_Neteo
 <img src="assets/screenshots/logo.png" alt="sub-neteo" width="50"/>
 
-![Version](https://img.shields.io/badge/version-1.0.0-2839B8) ![Language](https://img.shields.io/badge/language-C_Sharp-2839B8) ![Status](https://img.shields.io/badge/status-Second%20version-2839B8)
+![Version](https://img.shields.io/badge/version-1.1.2-2839B8) ![Language](https://img.shields.io/badge/language-C_Sharp-2839B8) ![Status](https://img.shields.io/badge/status-Second%20version-2839B8)
 ![Stars](https://img.shields.io/github/stars/Luis3Fernando/Sub-Neteo?style=social)
 
 Welcome to Sub-Neteo, your powerful and user-friendly subnet calculator! Whether you're a networking student, an IT professional, or just curious about how networks work, Sub-Neteo makes subnetting easy, fast, and insightful.
