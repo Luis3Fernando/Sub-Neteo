@@ -1,4 +1,5 @@
-396# Sub_Neteo
+# Sub_Neteo
+<img src="assets/screenshots/logo.png" alt="sub-neteo" width="100"/>
 ![Version](https://img.shields.io/badge/version-1.0.0-2839B8) ![Language](https://img.shields.io/badge/language-C_Sharp-2839B8) ![Status](https://img.shields.io/badge/status-Second%20version-2839B8)
 ![Stars](https://img.shields.io/github/stars/Luis3Fernando/Sub-Neteo?style=social)
 
@@ -28,8 +29,24 @@ Enter your IP address and the number of subnets you want:
 <img src="assets/screenshots/data.png" width="600"/>
 
 **Step 2: See the results**  
-Get instant results and subnet table.:
+Get instant results and subnet table:
 
 <img src="assets/screenshots/table.png" width="600"/>
 
+## 📥 Technologies
+
+This project is powered by:
+
+- **C#** – The programming language in which the project was developed.
+- **WPF** – Is the user interface framework for the design of interfaces.
+- **Net Core 6** – Is the framework that was used, you need that version.
+- **Visual Studio Community** - This is the ide to use to open the project.
+---
+
+## ⚙️ Installation
+
+Clones the repository and opens it with the IDE mentioned above:
+
+```bash
+git clone https://github.com/Luis3Fernando/Sub-Neteo
 ---
