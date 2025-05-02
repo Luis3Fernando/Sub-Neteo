@@ -1,4 +1,4 @@
-# Sub_Neteo
+396# Sub_Neteo
 ![Version](https://img.shields.io/badge/version-1.0.0-2839B8) ![Language](https://img.shields.io/badge/language-C_Sharp-2839B8) ![Status](https://img.shields.io/badge/status-Second%20version-2839B8)
 ![Stars](https://img.shields.io/github/stars/Luis3Fernando/Sub-Neteo?style=social)
 
@@ -12,14 +12,14 @@ Sub-Neteo is an interactive subnet calculator where you simply enter:
 
   …and instantly get:
   
-✅ Network IP address
-✅ Network mask
-✅ Number of bits used for subnetting
-✅ IP class (A, B, C…)
-✅ Number of usable subnets
-✅ Subnet mask
-✅ Number of usable IP addresses per subnet
-✅ Jump (the increment between subnets)
+- ✅ Network IP address
+- ✅ Network mask
+- ✅ Number of bits used for subnetting
+- ✅ IP class (A, B, C…)
+- ✅ Number of usable subnets
+- ✅ Subnet mask
+- ✅ Number of usable IP addresses per subnet
+- ✅ Jump (the increment between subnets)
 
 ## 💻 Example
 **Step 1: Select board size**  
