@@ -50,4 +50,4 @@ Clones the repository and opens it with the IDE mentioned above:
 
 ```bash
 git clone https://github.com/Luis3Fernando/Sub-Neteo
----
+
